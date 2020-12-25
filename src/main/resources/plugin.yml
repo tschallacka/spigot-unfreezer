@@ -1,0 +1,7 @@
+name: Unfreeze
+version: ${project.version}
+main: de.tschallacka.spigot.unfreeze.unfreeze.Unfreeze
+api-version: 1.13
+authors: [Tschallacka]
+description: A plugin to re-activate entities that were de-activate by other plugins and somehow not re-activated
+website: https://www.tschallacka.de

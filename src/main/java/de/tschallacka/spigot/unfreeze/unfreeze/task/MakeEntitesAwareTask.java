@@ -38,7 +38,7 @@ public class MakeEntitesAwareTask extends BukkitRunnable {
         }
         if(players.isEmpty()) return;
 
-        players.parallelStream()
+        players.stream()
                 .flatMap(player -> player.getNearbyEntities(trackingRange, trackingRange, trackingRange).stream())
                 .map(entity -> ((CraftEntity)entity).getHandle())
                 .filter(entity -> entity instanceof EntityInsentient && !(((EntityInsentient)entity).aware) )
